@@ -13,4 +13,5 @@ iptables -A OUTPUT -o ppp0 -j ACCEPT
 iptables -A FORWARD -i ppp0 -j ACCEPT
 iptables -A FORWARD -o ppp0 -j ACCEPT
 
-exec "$@"
+pptpd --fg
+
